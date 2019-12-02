@@ -70,11 +70,11 @@
       align-items: center;
     }
 
-    .panel > * :first-child {
+    .panel > * :first-child {transform: translateY(-100%);}
+    .panel.open-active > * :first-child {transform: translateY(0);}
+    .panel > * :last-child {transform: translateY(-100%);}
+    .panel.open-active > * :last-child {transform: translateY(0);}
 
-      transform: translateY(-100%);
-
-    }
 
     .panel p {
       text-transform: uppercase;
@@ -89,6 +89,7 @@
 
     .panel.open {
       font-size: 40px;
+      flex: 5;
     }
 
   </style>
