@@ -36,6 +36,7 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
 
+    //some
     const isAdult = people.some(function(perosn){
       const currentYear = (new Date()).getFullYear();
       if(currentYear - person.year >= 19) {
@@ -43,9 +44,17 @@
       }
     })
 
-    console.log(isAdult)
-
     const hotshotIsAdult = people.some((person) => (new Date().getFullYear()) - person.year >= 19)
+
+    //every
+    const isEveryAdult = people.every(function(perosn){
+      const currentYear = (new Date()).getFullYear();
+      if(currentYear - person.year >= 19) {
+        return true
+      }
+    })
+
+    //find
 
   </script>
 </body>
