@@ -36,6 +36,14 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
 
+    const isAdult = people.sum(function(perosn){
+      const currentYear = (new Date()).getFullYear();
+      if(currentYear - person.year >= 19) {
+        return true
+      }
+    })
+
+    console.log(isAdult)
   </script>
 </body>
 </html>
